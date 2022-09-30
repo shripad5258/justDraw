@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>justDraw</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <div class="heading">
+            <h2>just<span>Draw</span></h2>
+          </div>
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rect">
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Options</label>
+          <ul class="options">
+            <li class="option tool active" id="brush">
+              <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Colors</label>
+          <ul class="options colors">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" value="#4A98F7" id="color-picker" />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Clear Drawing</button>
+          <button class="save-img">Save As Image</button>
+        </div>
+        <p>© 2022 justDraw |ST. All Rights Reserved</p>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+  </body>
+</html>
